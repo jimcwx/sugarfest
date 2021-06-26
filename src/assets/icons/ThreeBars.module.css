@@ -1,0 +1,14 @@
+.threeBars {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: white;
+  transform:scale(1);
+  transition: all 0.25s ease;
+  z-index: 50;
+}
+
+.threeBars:hover {
+  transform:scale(1.3);
+  cursor:pointer;
+}

@@ -1,0 +1,12 @@
+.footer {
+  min-height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(110, 100, 100, 0.952);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

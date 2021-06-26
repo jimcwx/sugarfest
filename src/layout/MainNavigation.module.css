@@ -1,0 +1,67 @@
+.navBar {
+  height: 5%;
+  width: 100%;
+  background-color:rgba(110, 100, 100, 0.952);
+  display: flex;
+  align-items: center;
+  min-height: 43px;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav {
+  margin: 0 50px 0 0;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.listItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.linkText {
+  position: absolute;
+  color: white;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.25s ease;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.link {
+  z-index: 10;
+  transition: all 0.25s ease;
+  opacity: 1;
+  border-bottom: 1px solid rgba(110, 100, 100, 0.952);
+}
+
+.link:hover {
+  opacity: 0.3;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}
+
+.listItem:hover .linkText {
+  opacity: 1;
+}

@@ -1,0 +1,9 @@
+.faq {
+  text-shadow: 1px 1px 1px black;
+  margin: 20px 10px;
+  color: white;
+}
+
+h3:hover {
+  cursor:pointer;
+}

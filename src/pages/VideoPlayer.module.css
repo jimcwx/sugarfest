@@ -1,0 +1,22 @@
+.video {
+  position: relative;
+  border: 3px solid grey;
+  background: darkgrey;
+  z-index: 60;
+  max-height: 550px;
+  max-width: 800px;
+  min-height: 320px;
+  min-width: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qualityText {
+  position: absolute;
+  top: -50px;
+  color: white;
+  text-shadow: 2px 2px 2px grey;
+  left: 50px;
+  z-index: 60;
+}
