@@ -38,25 +38,25 @@ export default function MainNavigation() {
         <nav>
           <ul className={classes.internalNav}>
             <li className={classes.listItem}>
-              <a className={classes.link} href='https://astateofsugar.com/discord'>
+              <a target="_blank" rel="noopener noreferrer" className={classes.link} href='https://astateofsugar.com/discord'>
                 <img src={discordLogo} alt="Discord Icon" />
               </a>
               <p className={classes.linkText}>Discord</p>
             </li>
             <li className={classes.listItem}>
-              <a className={classes.link} href='https://twitter.com/astateofsugar'>
+              <a target="_blank" rel="noopener noreferrer" className={classes.link} href='https://twitter.com/astateofsugar'>
                 <img src={twitterLogo} alt="Twitter icon" />
               </a>
               <p className={classes.linkText}>Twitter</p>
             </li>
             <li className={classes.listItem}>
-              <a className={classes.link} href='https://www.youtube.com/astateofsugar?sub_confirmation=true'>
+              <a target="_blank" rel="noopener noreferrer" className={classes.link} href='https://www.youtube.com/astateofsugar?sub_confirmation=true'>
                 <img src={youtubeLogo} alt="Youtube icon" />
               </a>
               <p className={classes.linkText}>Youtube</p>
             </li>
             <li className={classes.listItem}>
-              <a className={classes.link} href='https://astateofsugar.bandcamp.com/follow_me'>
+              <a target="_blank" rel="noopener noreferrer" className={classes.link} href='https://astateofsugar.bandcamp.com/follow_me'>
                 <img src={bandcampLogo} alt="Bandcamp icon" />
               </a>
               <p className={classes.linkText}>Bandcamp</p>

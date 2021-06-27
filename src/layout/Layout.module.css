@@ -1,12 +1,28 @@
 .wholePage {
   height: 100vh;
   position: relative;
+  width: 100%;
 }
 
 .main {
   position: relative;
   width: 100%;
   height: 90%;
+  background-image: url('../assets/bg/bg.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.mainToggled {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   background-image: url('../assets/bg/bg.jpg');
   display: flex;
   justify-content: center;

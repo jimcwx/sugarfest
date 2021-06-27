@@ -35,8 +35,8 @@ export default function VideoPlayer() {
       <p className={classes.qualityText}>{videoUrls[videoQuality].quality}</p>
       <ReactPlayer 
         url={videoUrls[videoQuality].url}
-        height='440px'
-        width='790px'
+        height='100%'
+        width='100%'
         controls={true}
         volume={0.5}
       />

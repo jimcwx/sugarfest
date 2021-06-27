@@ -22,16 +22,28 @@ export default function Layout(props) {
     <div className={classes.wholePage}>
       {toggle ? <MainNavigation /> : null}
       <ThreeBarsIcon toggle={toggleHeaderFooter}/>
-      <main className={classes.main}>
-        <img className={`${classes.cloud} ${classes.cloudOne}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
-        <img className={`${classes.cloud} ${classes.cloudTwo}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
-        <img className={`${classes.cloud} ${classes.cloudThree}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
-        <img className={`${classes.cloud} ${classes.cloudFour}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
-        <img className={`${classes.cloud} ${classes.cloudFive}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
-        <img className={`${classes.cloud} ${classes.cloudSix}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
-        <img className={`${classes.cloud} ${classes.cloudSeven}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+      {toggle ? <main className={classes.main}>
+          <img className={`${classes.cloud} ${classes.cloudOne}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudTwo}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudThree}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudFour}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudFive}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudSix}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudSeven}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
         {props.children}
-      </main>
+        </main> : 
+        <main className={classes.mainToggled}>
+          <img className={`${classes.cloud} ${classes.cloudOne}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudTwo}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudThree}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudFour}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudFive}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudSix}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          <img className={`${classes.cloud} ${classes.cloudSeven}`} src={randomizeCloud(clouds)} alt="Pixlated Cloud" />
+          {props.children}
+        </main>
+      }
+      
       {toggle ? <Footer /> : null}
     </div>
   )
